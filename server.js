@@ -31,7 +31,7 @@ app.post('/api/notes', (req, res) => {
     }
     let notes = JSON.parse(data)
     let noteFromGet = req.body
-    noteFromGet.id = 1
+    noteFromGet.id = notes.length + 1
     notes.push(noteFromGet)
     console.log(noteFromGet)
     
